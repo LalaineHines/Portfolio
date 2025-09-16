@@ -1,0 +1,73 @@
+:root {
+    --prject-gap: 3rem;
+}
+
+div.projects {
+    display: grid;
+    gap: var(--project-gap);
+    width: min(70vw, 400px);
+}
+
+div.projects,
+div.projects div {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    z-index: 0;
+}
+
+div.projects div {
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+div.projects > div {
+    gap: 1rem;
+    padding: 1rem;
+    position: relative;
+}
+
+div.projects > div > div {
+    position: relative;
+}
+
+div.projects > div > img {
+    height: auto;
+    max-width: 1000px;
+    width: max(250px, 60vw);
+}
+
+div.projects div.links {
+    align-content: space-around;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 1.5rem;
+    height: 100%;
+    justify-content: space-around;
+    top: 0;
+    width: 100%;
+}
+
+div.projects div.links a {
+    align-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
+    display: flex;
+    font-size: 1.125rem;
+    gap: 0.5rem;
+    padding: 0.25rm 0.5rem;
+    z-index: 1;
+}
+
+div.projects + div.projects {
+    margin-top: var(--project-gap);
+}
+
+div.projects.highlights {
+    width: min(90vw, 600px);
+}
+
+div.projects p {
+    margin: 0;
+}
